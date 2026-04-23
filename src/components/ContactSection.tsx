@@ -47,11 +47,10 @@ const ContactSection = () => {
         >
           <p className="text-primary text-sm tracking-[0.2em] uppercase mb-4">Get Started</p>
           <h2 className="text-3xl md:text-5xl font-display font-semibold text-foreground mb-4">
-            Ready to <span className="italic text-gradient-gold">Transform</span> Your Business?
+            Ready to <span className="italic text-gradient-gold">Discuss</span> Your Project?
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto">
-            Book a strategy session with us.
-            No pitch decks. No obligations. Just clarity.
+            Share your enquiry and we will get back to you with the right advisory support.
           </p>
         </motion.div>
 
@@ -107,7 +106,7 @@ const ContactSection = () => {
               className="text-center py-16 p-8 md:p-12 rounded-sm bg-card border border-border/50 shadow-premium"
             >
               <p className="text-2xl font-display font-semibold text-foreground mb-2">Thank You</p>
-              <p className="text-muted-foreground">A senior partner will reach out within 24 hours.</p>
+              <p className="text-muted-foreground">We have received your enquiry and will reach out soon.</p>
             </motion.div>
           ) : (
             <motion.form
@@ -201,7 +200,7 @@ const ContactSection = () => {
                   type="submit"
                   className="w-full px-8 py-4 bg-primary text-primary-foreground font-semibold text-sm tracking-wide rounded-sm hover:bg-gold-light transition-colors duration-300"
                 >
-                  Request Your Strategy Session
+                  Send Enquiry
                 </button>
               </div>
             </motion.form>

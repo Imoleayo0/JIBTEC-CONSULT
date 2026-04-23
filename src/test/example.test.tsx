@@ -25,9 +25,9 @@ describe("homepage", () => {
     fireEvent.change(screen.getByLabelText(/company/i), { target: { value: "JIBTEC Partner" } });
     fireEvent.change(screen.getByLabelText(/select enquiry/i), { target: { value: "Business Advisory" } });
     fireEvent.change(screen.getByLabelText(/message/i), { target: { value: "I need advisory support." } });
-    fireEvent.click(screen.getByRole("button", { name: /request your strategy session/i }));
+    fireEvent.click(screen.getByRole("button", { name: /send enquiry/i }));
 
     expect(screen.getByText(/thank you/i)).toBeInTheDocument();
-    expect(screen.getByText(/senior partner will reach out/i)).toBeInTheDocument();
+    expect(screen.getByText(/we have received your enquiry/i)).toBeInTheDocument();
   });
 });
